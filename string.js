@@ -293,6 +293,80 @@ function unique(){
     var fifth = parseFloat(doc5.value);
     var sixth = parseFloat(doc6.value);
 
+    var m1 = 1;
+    var m2 = 1;
+    var m3 = 1;
+    var m4 = 1;
+    var m5 = 1;
+    var m6 = 1;
+
+    if(first === second){
+        m1 ++;
+    }
+    if(first === third){
+        m1 ++;
+    }
+    if(first === fourth){
+        m1 ++;
+    }
+    if(first === fifth){
+        m1 ++;
+    }
+    if(first === sixth){
+        m1 ++;
+    }
+    if(second === third){
+        m2 ++;
+    }
+    if(second === fourth){
+        m2 ++;
+    }
+    if(second === fifth){
+        m2 ++;
+    }
+    if(second === sixth){
+        m2 ++;
+    }
+    if(third === fourth){
+        m3 ++;
+    }
+    if(third === fifth){
+        m3 ++;
+    }
+    if(third === sixth){
+        m3 ++;
+    }
+    if(fourth === fifth){
+        m4 ++;
+    }
+    if(fourth === sixth){
+        m4 ++;
+    }
+    if(fifth === sixth){
+        m5 ++;
+    }
+
+    if(m1 === 1 && m2 === 1 && m3 === 1 && m4 === 1 && m5 === 1 && m6 === 1){
+        output.innerHTML += "there is no dups"
+    }
+    if(m1 !== 1){
+        output.innerHTML += " " + first + " is a dup and it appears " + m1 + " times. ";
+    }
+    if(m2 !== 1 && second !== first){
+        output.innerHTML += " " + second + " is a dup and it appears " + m2 + " times. ";
+    }
+    if(m3 !== 1 && third !== second && third !== first){
+        output.innerHTML += " " + third + " is a dup and it appears " + m3 + " times. ";
+    }
+    if(m4 !== 1 && fourth !== third && fourth !== second && fourth !== first){
+        output.innerHTML += " " + fourth + " is a dup and it appears " + m4 + " times. ";
+    }
+    if(m5 !== 1 && fifth !== fourth && fifth !== third && fifth !== second && fifth !== first){
+        output.innerHTML += " " + fifth + " is a dup and it appears " + m5 + " times. ";
+    }
+    if(m6 !== 1 && sixth !== fifth && sixth !== fourth && sixth !== third && sixth !== second && sixth !== first){
+        output.innerHTML += " " + sixth + " is a dup and it appears " + m6 + " times. ";
+    }
 }
 
 function Dupe(){
