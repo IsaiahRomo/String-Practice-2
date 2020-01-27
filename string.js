@@ -346,26 +346,23 @@ function unique(){
         m5 ++;
     }
 
-    if(m1 === 1 && m2 === 1 && m3 === 1 && m4 === 1 && m5 === 1 && m6 === 1){
-        output.innerHTML += "there is no dups"
+    if(m1 === 1){
+        output.innerHTML += " " + first + " is a unique. ";
     }
-    if(m1 !== 1){
-        output.innerHTML += " " + first + " is a dup and it appears " + m1 + " times. ";
+    if(m2 === 1){
+        output.innerHTML += " " + second + " is a unique. ";
     }
-    if(m2 !== 1 && second !== first){
-        output.innerHTML += " " + second + " is a dup and it appears " + m2 + " times. ";
+    if(m3 === 1){
+        output.innerHTML += " " + third + " is a unique. ";
     }
-    if(m3 !== 1 && third !== second && third !== first){
-        output.innerHTML += " " + third + " is a dup and it appears " + m3 + " times. ";
+    if(m4 === 1){
+        output.innerHTML += " " + fourth + " is a unique. ";
     }
-    if(m4 !== 1 && fourth !== third && fourth !== second && fourth !== first){
-        output.innerHTML += " " + fourth + " is a dup and it appears " + m4 + " times. ";
+    if(m5 === 1){
+        output.innerHTML += " " + fifth + " is a unique. ";
     }
-    if(m5 !== 1 && fifth !== fourth && fifth !== third && fifth !== second && fifth !== first){
-        output.innerHTML += " " + fifth + " is a dup and it appears " + m5 + " times. ";
-    }
-    if(m6 !== 1 && sixth !== fifth && sixth !== fourth && sixth !== third && sixth !== second && sixth !== first){
-        output.innerHTML += " " + sixth + " is a dup and it appears " + m6 + " times. ";
+    if(m6 === 1){
+        output.innerHTML += " " + sixth + " is unique. ";
     }
 }
 
