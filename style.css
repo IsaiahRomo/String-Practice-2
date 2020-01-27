@@ -5,9 +5,9 @@ html{
     height: 800px;
 }
 h2{
-    color: blue;
-    background-color: ;
-    border: dashed black 5px;
+    color: black;
+    background-color: linear-gradient(red, blue);
+    border: solid black 5px;
 }
 form p{
     width: 50%;
